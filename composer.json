@@ -1,0 +1,9 @@
+{
+    "require": {
+        "silex/silex": "~1.2",
+        "twig/twig": "~1.18"
+    },
+    "autoload": {
+        "psr-4": {"myapp\\": "src"}
+    }
+}
