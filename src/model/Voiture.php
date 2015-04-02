@@ -1,6 +1,6 @@
 <?php
 
-namespace myapp\model;
+namespace lpccars\model;
 
 class Voiture {
 

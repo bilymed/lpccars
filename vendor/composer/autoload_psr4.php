@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'myapp\\' => array($baseDir . '/src'),
+    'lpccars\\' => array($baseDir . '/src'),
 );

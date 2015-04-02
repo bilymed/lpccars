@@ -1,6 +1,6 @@
 <?php
 
-namespace myapp\service;
+namespace lpccars\service;
 //use myapp\model\Voiture;
 
 class VoitureService {
@@ -13,7 +13,7 @@ class VoitureService {
         }
         
         $query = $bdd->query('SELECT * FROM voiture');
-        $query->setFetchMode(\PDO::FETCH_CLASS, 'myapp\model\Voiture');
+        $query->setFetchMode(\PDO::FETCH_CLASS, 'lpccars\model\Voiture');
         $voitures = array();
         while ($r = $query->fetch()){
             array_push($voitures, $r );

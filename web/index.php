@@ -1,25 +1,15 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
-require_once 'rb.php';
+define("ROOT", dirname(__DIR__));
 
-//use Symfony\Component\Debug\ErrorHandler;
-//use Symfony\Component\Debug\ExceptionHandler;
+require_once ROOT . '/vendor/autoload.php';
 
-// Register global error and exception handlers
-//ErrorHandler::register();
-//ExceptionHandler::register();
+require_once ROOT . '/app/App.php';
 
-$app = new \Silex\Application();
-$app['debug'] = true;
+use lpccars\app\App;
 
-// Register service providers.
-//$app->register(new Silex\Provider\TwigServiceProvider(), array(
-//    'twig.path' => dirname(__DIR__) . DIRECTORY_SEPARATOR . 'views',
-//));
-
-
-require __DIR__.'/../app/routes.php';
+$app = new App();
 
 $app->run();
+
 
